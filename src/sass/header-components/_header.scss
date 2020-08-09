@@ -127,7 +127,7 @@ header {
   letter-spacing: 0.1rem;
   color: $background-color;
 
-  .header-social {
+  .header-links {
     //. ссылка на соцсети (цвет/ ховер)
     text-decoration: none;
     color: $header-title-color;
@@ -136,6 +136,9 @@ header {
     &:focus {
       color: $accent-color;
     }
+  }
+  .revers {
+    color: $background-color;
   }
 
   @media screen and (max-width: 767px) {
@@ -163,7 +166,7 @@ header {
     color: $header-title-color;
 
     .hd-menu-container {
-      max-width: 100%; //!!!!!!!!! - не  реагирует
+      max-width: 377px; //!!!!!!!!! - не  реагирует
       height: 100%;
       margin: 0;
       padding-top: 118px;
@@ -232,6 +235,8 @@ header {
   }
 
   @media screen and (min-width: $tablet) {
+    //| -------------------------------------- 2-я точка перелома ----------------------------------------------
+
     .hd-menu-container {
       display: flex;
       justify-content: start;
@@ -334,6 +339,7 @@ header {
   }
 
   @media screen and (min-width: $desktop) {
+    //|| - ----------------------------3-я точка перелома ----------------------------------
     margin-left: 71px;
     .hd-menu-container {
       .site-navigation {
